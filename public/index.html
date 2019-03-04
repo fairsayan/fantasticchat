@@ -12,8 +12,21 @@
     </style>
   </head>
   <body>
-    <div>Domenico</div>
-    <div>Second</div>
-    <div>Nome 3</div>
+    <div id="first">Domenico</div>
+    <div id="second">Second</div>
+    <div id="third">Nome 3</div>
+    <script>
+      function factorial(n) {
+        return n > 1 ? n * factorial(n - 1) : 1
+      }
+
+      var text1 = document.getElementById('first').innerHTML
+      var text2 = document.getElementById('second').innerHTML
+      var text3 = document.getElementById('third').innerHTML
+
+      document.getElementById('first').innerHTML += ' ' + factorial(text1.length)
+      document.getElementById('second').innerHTML += ' ' + factorial(text2.length)
+      document.getElementById('third').innerHTML += ' ' + factorial(text3.length)
+    </script>
   </body>
 </html>
