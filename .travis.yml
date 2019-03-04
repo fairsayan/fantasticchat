@@ -2,10 +2,6 @@ language: node_js
 node_js:
   - "node"
 
-before_script:
-  - npm install firebase-tools -g
-  - cd functions && npm install
-
 deploy:
   provider: firebase
   project: "fantasticchat-e316a"
