@@ -5,6 +5,9 @@ before_script:
   - npm install firebase-tools -g
   - cd functions && npm install && cd ..
 
+script:
+  -
+
 deploy:
   provider: firebase
   only: hosting
