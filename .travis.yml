@@ -4,7 +4,7 @@ node_js:
 
 before_script:
   - npm install -g firebase-tools
-  - npm install
+  - cd functions && npm install && cd ..
 
 script:
   - echo "skipping tests"
