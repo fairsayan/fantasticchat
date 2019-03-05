@@ -7,3 +7,7 @@ before_script:
 
 script:
   - firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
+
+branches:
+  only:
+  - master
