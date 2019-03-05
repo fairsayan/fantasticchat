@@ -6,4 +6,4 @@ before_script:
   - cd functions && npm install
 
 script:
-  - firebase deploy --only hosting --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
+  - firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
