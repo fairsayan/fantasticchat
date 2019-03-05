@@ -1,0 +1,27 @@
+{
+  "name": "fantasticchat",
+  "version": "1.0.0",
+  "description": "Automation script",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fairsayan/fantasticchat.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/fairsayan/fantasticchat/issues"
+  },
+  "homepage": "https://github.com/fairsayan/fantasticchat#readme",
+  "devDependencies": {
+    "karma": "^4.0.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-jasmine": "^2.0.1"
+  }
+}
