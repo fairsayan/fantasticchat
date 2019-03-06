@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "url": "https://github.com/fairsayan/fantasticchat/issues"
   },
   "homepage": "https://github.com/fairsayan/fantasticchat#readme",
-  "dependencies": {
+  "devDependencies": {
     "karma": "^4.0.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.1.0",

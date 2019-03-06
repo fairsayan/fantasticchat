@@ -7,11 +7,11 @@ before_install:
 
 before_script:
   - npm install
-  - npm install firebase-tools -g
-  - cd functions && npm install
+#  - npm install firebase-tools -g
+#  - cd functions && npm install
 
 script:
-  - ./node_modules/karma/bin/karma start karma.conf.js --single-run && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
+  - npm test && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
 
 branches:
   only:
