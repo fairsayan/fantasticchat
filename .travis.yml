@@ -11,7 +11,8 @@ before_script:
 #  - cd functions && npm install
 
 script:
-  - npm test && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
+  - npm test 
+#  && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
 
 branches:
   only:
