@@ -1,11 +1,17 @@
 language: node_js
 node_js: 8
 
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
 before_script:
+  - npm install
   - npm install firebase-tools -g
   - cd functions && npm install
 
 script:
+  - node_modules/karma/bin/karma start karma.conf.js --single-run
   - firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
 
 branches:
