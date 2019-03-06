@@ -8,7 +8,7 @@ before_install:
 before_script:
   - npm install
   - npm install firebase-tools -g
-  - cd functions && npm install
+  - cd functions && npm install && cd ..
 
 script:
   - npm test && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && firebase deploy --token "1/Fqf9KhMtUVZvSOy7h8YGvVhS_gDzYMtBQIoGliKSIdM"
